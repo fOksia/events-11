@@ -168,7 +168,29 @@
 							<h2>Contact Us</h2>
 							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
 					</div>
-					<form action="" method="POST"></form>
+					<form class="contact-form" action="" method="POST" autocomplete="off">
+						<div class="contack-form__group contack-form__group--1-2 ">
+							<input class="contack-form__input" type="text" name="firstname" id="firstname">
+							<label class="contack-form__label" for="firstname">First name</label>
+						</div>
+						<div class="contack-form__group contack-form__group--1-2 ">
+							<input class="contack-form__input" type="text" name="lastname" id="lastname">
+							<label class="contack-form__label" for="lastname">Last name</label>
+						</div>
+						<div class="contack-form__group contack-form__group--1-2 ">
+							<input class="contack-form__input" type="email" name="email1" id="email1">
+							<label class="contack-form__label" for="email1">Email</label>
+						</div>
+						<div class="contack-form__group contack-form__group--1-2 ">
+							<input class="contack-form__input" type="url" name="website" id="website">
+							<label class="contack-form__label" for="website">Website</label>
+						</div>
+						<div class="contack-form__group">
+							<input class="contack-form__input" type="text" name="message" id="message">
+							<label class="contack-form__label" for="message">Message</label>
+						</div>
+						<button class="btn" type="submit">Send Message</button>
+					</form>
 					</div>
 				</section>
 		</main>

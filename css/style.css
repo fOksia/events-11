@@ -484,12 +484,13 @@ font-size: 16px;
     margin: 20px 0 70px;
 }
 
+
 .subscribe-form__input {
     color: #888888;
     border-radius: 5px;
     outline: none;
     border: 2px solid #fff;
-    padding: 0 20px;
+    padding: 15px 20px;
     margin: 0 10px;
     font-size: 18px;
     width: 100%;
@@ -498,5 +499,60 @@ font-size: 16px;
 
 .subscribe-form__input:focus {
     border-color: #e71cb4;
+    
+}
+@media screen and (max-width: 576px) {
+    .subscribe-form {
+        flex-direction: column;
+    }
+    .subscribe-form__input {
+        margin: 0;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+}
 
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.contack-form__group {
+    margin: 15px 17px 40px;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    position: relative;
+}
+
+.contack-form__group--1-2 {
+    width: calc(50% - 17px * 2);
+}
+
+.contack-form__input,
+.contack-form__label {
+    display: block;
+    width: 100%;
+}
+.contack-form__input {
+    outline: none;
+    border: 0;
+    border-bottom: 4px solid #000000;
+    padding: 15px 0;
+    transition: border-color .4s ease;
+}
+
+.contack-form__input:focus {
+    border-color: transparent;
+}
+
+.contack-form__label {
+    padding: 15px 0;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: border-color .4s ease;
+}
+
+.contack-form__input:focus + .contack-form__label {
+    transform: translateY(0);
 }
